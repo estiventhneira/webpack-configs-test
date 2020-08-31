@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    home: path.resolve(__dirname, "src/js/index.js"),
+    home: path.resolve(__dirname, "src/js/home.js"),
     precios: path.resolve(__dirname, "src/js/precios.js"),
     contacto: path.resolve(__dirname, "src/js/contacto.js"),
   },
@@ -15,7 +15,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: "css-loader",
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
