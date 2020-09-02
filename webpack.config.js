@@ -6,8 +6,6 @@ const webpack = require("webpack");
 module.exports = {
   entry: {
     home: path.resolve(__dirname, "src/js/home.js"),
-    precios: path.resolve(__dirname, "src/js/precios.js"),
-    contacto: path.resolve(__dirname, "src/js/contacto.js"),
   },
   mode: "development",
   output: {
@@ -22,6 +20,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: ["babel-loader"],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
@@ -31,6 +34,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: "Titulo",
+      template: path.resolve(__dirname, "./index.html"),
     }),
   ],
 };
