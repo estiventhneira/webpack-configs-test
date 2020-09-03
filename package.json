@@ -19,7 +19,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack-dev-server"
+    "build": "webpack"
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",

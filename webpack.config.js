@@ -6,6 +6,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: {
     home: path.resolve(__dirname, "src/js/home.js"),
+    contacto: path.resolve(__dirname, "src/js/contacto.js"),
   },
   mode: "development",
   output: {
@@ -46,4 +47,11 @@ module.exports = {
       template: path.resolve(__dirname, "./index.html"),
     }),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      minSize: 0,
+      name: "commons",
+    },
+  },
 };

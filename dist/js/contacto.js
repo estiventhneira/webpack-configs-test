@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "4e83d4bf5749e0d8c70b";
+/******/ 	var hotCurrentHash = "c2c2cfc6549cb2479364";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,7 +800,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hola Mundo desde Webpack 1\");\n\n//# sourceURL=webpack:///./src/js/contacto.js?");
+eval("\n\n//# sourceURL=webpack:///./src/js/contacto.js?");
 
 /***/ })
 
